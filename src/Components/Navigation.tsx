@@ -30,13 +30,16 @@ export function Navigation()
         <Navbar.Collapse id = 'responsive-navbar-nav'   className="justify-content-end" >
          <Nav defaultActiveKey="/" as="ul">
          <Nav.Item>
-           <Nav.Link href="#features"  className="nav-links" >Features</Nav.Link>
-         </Nav.Item>
-         <Nav.Item>
            <Nav.Link href="#home" className="nav-links" >Home</Nav.Link>
          </Nav.Item>
          <Nav.Item>
+           <Nav.Link href="#features"  className="nav-links" >Features</Nav.Link>
+         </Nav.Item>
+         <Nav.Item>
            <Nav.Link href='#about'  className="nav-links" >About</Nav.Link>
+         </Nav.Item>
+         <Nav.Item>
+           <Nav.Link href='#portfolio'  className="nav-links" >Gallery</Nav.Link>
          </Nav.Item>
          <Nav.Item>
            <Nav.Link href="#contact"  className="nav-links" >Contact</Nav.Link>

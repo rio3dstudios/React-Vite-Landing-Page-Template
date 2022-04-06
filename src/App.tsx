@@ -8,6 +8,7 @@ import { Home } from './Components/Home';
 import { About } from './Components/About';
 import { Contact } from './Components/Contact';
 import { Features } from './Components/Features';
+import { Gallery } from './Components/Gallery';
 
 
 
@@ -27,8 +28,9 @@ function App() {
       <Home  data={pageData.Header} />
       <Features data={pageData.Features}/>
       <About  data={pageData.About} />
+      <Gallery data={pageData.Gallery} />
       <Contact  data={pageData.Contact} />
-
+      
 
 
     </div>
