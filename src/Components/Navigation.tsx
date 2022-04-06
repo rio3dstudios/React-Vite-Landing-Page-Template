@@ -1,21 +1,12 @@
 
 import{Navbar,Nav,Container} from 'react-bootstrap';
-import {
-    BrowserRouter,
-    Routes,
-    Route,
-    Link
-  } from "react-router-dom";
 
-import {Home} from './Home';
-import {About} from './About';
-import {Contact} from './Contact';
 import JsonData from "../data/data.json";
 import { useState, useEffect } from "react";
 
 
 
-export function NavbarManager()
+export function Navigation()
 {
     const [pageData, setPageData] = useState({});//pageData== vetor, setPageData == funcão para carregar o vetor
     useEffect(() => {
@@ -38,6 +29,9 @@ export function NavbarManager()
 
         <Navbar.Collapse id = 'responsive-navbar-nav'   className="justify-content-end" >
          <Nav defaultActiveKey="/" as="ul">
+         <Nav.Item>
+           <Nav.Link href="#features"  className="nav-links" >Features</Nav.Link>
+         </Nav.Item>
          <Nav.Item>
            <Nav.Link href="#home" className="nav-links" >Home</Nav.Link>
          </Nav.Item>

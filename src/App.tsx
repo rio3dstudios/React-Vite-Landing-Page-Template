@@ -1,12 +1,13 @@
 import './App.css'
 
-import { NavbarManager } from './Components/NavbarManager'
+import { Navigation } from './Components/Navigation'
 import JsonData from "./data/data.json";
 import { useState, useEffect } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Home } from './Components/Home';
 import { About } from './Components/About';
 import { Contact } from './Components/Contact';
+import { Features } from './Components/Features';
 
 
 
@@ -22,8 +23,9 @@ function App() {
  
   return (
     <div>
-      <NavbarManager/>
+      <Navigation/>
       <Home  data={pageData.Header} />
+      <Features data={pageData.Features}/>
       <About  data={pageData.About} />
       <Contact  data={pageData.Contact} />
 
