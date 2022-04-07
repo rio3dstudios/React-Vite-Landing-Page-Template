@@ -36,6 +36,9 @@ export function Navigation()
            <Nav.Link href="#features"  className="nav-links" >Features</Nav.Link>
          </Nav.Item>
          <Nav.Item>
+           <Nav.Link href="#services" className="nav-links" >Services</Nav.Link>
+         </Nav.Item>
+         <Nav.Item>
            <Nav.Link href='#about'  className="nav-links" >About</Nav.Link>
          </Nav.Item>
          <Nav.Item>

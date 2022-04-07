@@ -1,6 +1,6 @@
 
 
-import { Container, Row, Col,Grid } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import { Image } from "./Image";
 type GalleryProps =
 {

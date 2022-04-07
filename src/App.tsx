@@ -11,6 +11,7 @@ import { Features } from './Components/Features';
 import { Gallery } from './Components/Gallery';
 import { Testimonials } from './Components/Testimonials';
 import { Team } from './Components/Team';
+import { Services } from './Components/Services';
 
 
 
@@ -29,6 +30,7 @@ function App() {
       <Navigation/>
       <Home  data={pageData.Header} />
       <Features data={pageData.Features}/>
+      <Services data={pageData.Services} />
       <About  data={pageData.About} />
       <Gallery data={pageData.Gallery} />
       <Testimonials data={pageData.Testimonials} />
