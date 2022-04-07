@@ -45,6 +45,9 @@ export function Navigation()
            <Nav.Link href='#testimonials'  className="nav-links" >Testimonials</Nav.Link>
          </Nav.Item>
          <Nav.Item>
+           <Nav.Link href='#team'  className="nav-links" >Team</Nav.Link>
+         </Nav.Item>
+         <Nav.Item>
            <Nav.Link href="#contact"  className="nav-links" >Contact</Nav.Link>
          </Nav.Item>
         

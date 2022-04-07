@@ -10,6 +10,7 @@ import { Contact } from './Components/Contact';
 import { Features } from './Components/Features';
 import { Gallery } from './Components/Gallery';
 import { Testimonials } from './Components/Testimonials';
+import { Team } from './Components/Team';
 
 
 
@@ -31,6 +32,7 @@ function App() {
       <About  data={pageData.About} />
       <Gallery data={pageData.Gallery} />
       <Testimonials data={pageData.Testimonials} />
+      <Team data ={pageData.Team} />
       <Contact  data={pageData.Contact} />
       
 

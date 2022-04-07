@@ -141,18 +141,18 @@ export function Contact(props: ContactProps)
                   <ul>
                     <li>
                       <a href={props.data ? props.data.facebook : '/'}>
-                      <FontAwesomeIcon icon={faFacebook} style={{ color: 'white' }} />
+                      <FontAwesomeIcon icon={faFacebook} style={{ color: 'white',fontSize:'42px' }} />
                       </a>
                     </li>
                     <li>
                       <a href={props.data ? props.data.twitter : '/'}>
                      
-                        <FontAwesomeIcon icon={faTwitter} style={{ color: 'white' }} />
+                        <FontAwesomeIcon icon={faTwitter} style={{ color: 'white',fontSize:'42px' }} />
                       </a>
                     </li>
                     <li>
                       <a href={props.data ? props.data.youtube : '/'}>
-                      <FontAwesomeIcon icon={faYoutube} style={{ color: 'white' }} />
+                      <FontAwesomeIcon icon={faYoutube} style={{ color: 'white',fontSize:'42px'}} />
                       </a>
                     </li>
                   </ul>
@@ -161,7 +161,9 @@ export function Contact(props: ContactProps)
             </div>
             </Container>
        
-        <div id='footer'>
+       
+      </div>
+      <div id='footer'>
           <div className='container text-center'>
             <p>
               &copy; 2022 Sebastião Lucio React Land Page Template. Design by{' '}
@@ -171,7 +173,6 @@ export function Contact(props: ContactProps)
             </p>
           </div>
         </div>
-      </div>
       </div>
     )
 }
