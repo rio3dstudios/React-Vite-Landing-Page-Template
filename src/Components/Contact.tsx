@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook,faTwitter,faYoutube } from "@fortawesome/free-brands-svg-icons"
 import {faMapMarker,faPhone,faEnvelope} from "@fortawesome/free-solid-svg-icons";
 import emailjs from '@emailjs/browser';
+import {default as JsonData} from "../data/data.json";
 
 const initialState = {
     name: '',
@@ -11,12 +12,8 @@ const initialState = {
     message: '',
   }
 
-  type ContactProps =
-{
-    data:[];
-}
 
-export function Contact(props: ContactProps)
+export function Contact()
 {
 
     const [{ name, email, message }, setFieldsState] = useState(initialState)
@@ -109,7 +106,7 @@ export function Contact(props: ContactProps)
                     {" "}
                      Address
                   </span>
-                  {props.data ? props.data.address : 'loading'}
+                  {JsonData ? JsonData.Contact.address : 'loading'}
                 </p>
               </div>
               <div className='contact-item'>
@@ -120,7 +117,7 @@ export function Contact(props: ContactProps)
                     {" "}
                      Phone
                   </span>{' '}
-                  {props.data ? props.data.phone : 'loading'}
+                  {JsonData ? JsonData.Contact.phone: 'loading'}
                 </p>
               </div>
               <div className='contact-item'>
@@ -130,7 +127,7 @@ export function Contact(props: ContactProps)
                     {" "}
                      Email
                   </span>{' '}
-                  {props.data ? props.data.email : 'loading'}
+                  {JsonData ? JsonData.Contact.email : 'loading'}
                 </p>
               </div>
             </Col>
@@ -140,18 +137,18 @@ export function Contact(props: ContactProps)
                 <div className='social'>
                   <ul>
                     <li>
-                      <a href={props.data ? props.data.facebook : '/'}>
+                      <a href={JsonData  ? JsonData.Contact.facebook : '/'}>
                       <FontAwesomeIcon icon={faFacebook} style={{ color: 'white',fontSize:'42px' }} />
                       </a>
                     </li>
                     <li>
-                      <a href={props.data ? props.data.twitter : '/'}>
+                      <a href={JsonData  ?JsonData.Contact.twitter : '/'}>
                      
                         <FontAwesomeIcon icon={faTwitter} style={{ color: 'white',fontSize:'42px' }} />
                       </a>
                     </li>
                     <li>
-                      <a href={props.data ? props.data.youtube : '/'}>
+                      <a href={JsonData  ? JsonData.Contact.youtube : '/'}>
                       <FontAwesomeIcon icon={faYoutube} style={{ color: 'white',fontSize:'42px'}} />
                       </a>
                     </li>

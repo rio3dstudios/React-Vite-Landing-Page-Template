@@ -2,13 +2,10 @@
 
 import { Container, Row, Col } from 'react-bootstrap';
 import { Image } from "./Image";
-type GalleryProps =
-{
-    data:[];
-}
+import {default as JsonData} from "../data/data.json";
 
 
-export function Gallery(props: GalleryProps)
+export function Gallery()
 {
     return(
 
@@ -25,8 +22,8 @@ export function Gallery(props: GalleryProps)
           <div className='portfolio-items'>   
           
             <Row>
-            {props.data
-              ? props.data.map((d, i) => (
+            {JsonData
+              ? JsonData.Gallery.map((d, i) => (
                 <Col sm={6} lg md={4} key={`${d.title}-${i}`}>
                   <Image title={d.title} largeImage={d.largeImage} smallImage={d.smallImage} />
                 </Col>

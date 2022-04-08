@@ -1,11 +1,8 @@
 import { Container, Row, Col } from 'react-bootstrap';
-type TeamProps =
-{
-    data:[];
-}
+import {default as JsonData} from "../data/data.json";
 
 
-export function Team(props: TeamProps)
+export function Team()
 {
     return(
     
@@ -19,8 +16,8 @@ export function Team(props: TeamProps)
           </p>
         </Col>
         <Row>
-          {props.data
-            ? props.data.map((d, i) => (
+          {JsonData
+            ? JsonData.Team.map((d, i) => (
                 <Col md={3} sm={6} key={`${d.name}-${i}`} className=' team'>
                   <div className='thumbnail'>
                     {' '}

@@ -3,15 +3,10 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faCheck,faComment,faBullhorn,faGroupArrowsRotate,faMagic} from "@fortawesome/free-solid-svg-icons";
+import {default as JsonData} from "../data/data.json";
 
 
-type FeaturesProps =
-{
-    data:[];
-};
-
-
-export function Features(props: FeaturesProps)
+export function Features()
 {
 
     
@@ -31,8 +26,8 @@ export function Features(props: FeaturesProps)
             </Col>
          
 
-          {props.data
-            ? props.data.map((d, i) => (
+          {JsonData
+            ? JsonData.Features.map((d, i) => (
                 <Col xs={6} md={3} key={`${d.title}-${i}`} >
                   {' '}
 

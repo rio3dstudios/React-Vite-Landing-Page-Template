@@ -1,11 +1,8 @@
 import{Container,Row,Col} from 'react-bootstrap';
-type TestimonialsProps =
-{
-    data:[];
-}
+import {default as JsonData} from "../data/data.json";
 
 
-export function Testimonials(props: TestimonialsProps)
+export function Testimonials()
 {
     return(
         <div id='testimonials'>
@@ -14,8 +11,8 @@ export function Testimonials(props: TestimonialsProps)
             <h2>What our clients say</h2>
           </div>
           <Row>
-            {props.data
-              ? props.data.map((d, i) => (
+            {JsonData
+              ? JsonData.Testimonials.map((d, i) => (
                   <Col md ={4} key={`${d.name}-${i}`}>
                     <div className='testimonial'>
                       <div className='testimonial-image'>

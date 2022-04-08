@@ -1,7 +1,7 @@
 import './App.css'
 
 import { Navigation } from './Components/Navigation'
-import JsonData from "./data/data.json";
+import {default as JsonData} from "./data/data.json";
 import { useState, useEffect } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Home } from './Components/Home';
@@ -15,7 +15,10 @@ import { Services } from './Components/Services';
 
 
 
+
+
 function App() {
+
 
   const [pageData, setPageData] = useState({});//pageData== vetor, 
                                               // setPageData == funcão para carregar o vetor
@@ -26,16 +29,17 @@ function App() {
   }, []);
  
   return (
+   
     <div>
       <Navigation/>
-      <Home  data={pageData.Header} />
-      <Features data={pageData.Features}/>
-      <Services data={pageData.Services} />
-      <About  data={pageData.About} />
-      <Gallery data={pageData.Gallery} />
-      <Testimonials data={pageData.Testimonials} />
-      <Team data ={pageData.Team} />
-      <Contact  data={pageData.Contact} />
+      <Home />
+      <Features />
+      <Services />
+      <About />
+      <Gallery />
+      <Testimonials/>
+      <Team />
+      <Contact />
       
 
 

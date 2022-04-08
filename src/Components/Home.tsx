@@ -1,12 +1,8 @@
 import { Container, Row, Col } from 'react-bootstrap';
+import {default as JsonData} from "../data/data.json";
 
 
-type HomeProps =
-{
-    data:[];
-}
-
-export function Home(props: HomeProps)
+export function Home()
 {
     return(
         <header id='home'>
@@ -16,10 +12,10 @@ export function Home(props: HomeProps)
               <Row>
                 <Col   md={{ span: 8, offset: 2 }} className=' intro-text'>
                   <h1>
-                    {props.data ? props.data.title : 'Loading'}
+                    {JsonData ? JsonData.Header.title : 'Loading'}
                     <span></span>
                   </h1>
-                  <p>{props.data ? props.data.paragraph : 'Loading'}</p>
+                  <p>{JsonData ? JsonData.Header.paragraph : 'Loading'}</p>
                   <a
                     href='#features'
                     className='btn btn-custom btn-lg page-scroll'
