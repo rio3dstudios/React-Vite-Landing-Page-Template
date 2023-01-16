@@ -62,6 +62,7 @@ export function Contact()
                                 name="name"
                                 placeholder="Name"
                                 required
+								value={name}
                                 onChange={handleChange}
                                 />
                         <p className='help-block text-danger'></p>
@@ -72,6 +73,8 @@ export function Contact()
 
                      <Form.Control 
                        type="email" 
+					   name ="email"
+					   value={email}
                        placeholder="name@example.com"
                        onChange={handleChange}
                       />
@@ -83,7 +86,9 @@ export function Contact()
                     <Form.Group>
                     <Form.Control as="textarea"
                      id='message'
+					 name = "message"
                      rows={4} 
+					 value={message}
                      onChange={handleChange}
                      />
                 
