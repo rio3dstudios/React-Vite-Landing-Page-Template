@@ -95,7 +95,10 @@ export function Contact()
                     <p className='help-block text-danger'></p>
                     </Form.Group>
                   <div id='success'></div>
-                  <Button as="input" type="submit"  size="lg"/>{' '}
+                  <Button as="input" type="submit" 
+				  size="lg"
+				   onClick={(e) => handleSubmit(e)}
+				  />{' '}
                  
                   </Form>
                 </Row>
